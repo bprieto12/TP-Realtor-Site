@@ -1,0 +1,16 @@
+
+
+$(document).on("scroll", function(){ 
+    // or as a shorthand $(document).scroll(function(){
+    if($(document).scrollTop() > 255)
+        {
+            //begin to scroll
+            $("#floating_list").css("position","fixed");
+            $("#floating_list").css("top",0);
+        }
+        else
+        {
+            //lock it back into place
+            $("#floating_list").css("position","relative");
+        }
+});
